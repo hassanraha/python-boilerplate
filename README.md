@@ -1,19 +1,20 @@
 # My Project
 
-This is a boilerplate Python project using Poetry, pre-commit, and GitHub Actions.
+This is a boilerplate Python project using uv, pre-commit, and GitHub Actions.
 
 ## Setup
 
 1. Make sure you have Python 3.12 installed.
-2. Install Poetry: https://python-poetry.org/docs/#installation
+2. Install uv: https://github.com/astral-sh/uv#installation
 3. Clone this repository.
-4. Run `poetry install` to install dependencies.
-5. Run `poetry run pre-commit install` to set up pre-commit hooks.
+4. Run `uv pip install -r requirements.txt` to install dependencies.
+5. Run `uv pip install pre-commit` to install pre-commit.
+6. Run `pre-commit install` to set up pre-commit hooks.
 
 ## Development
 
-- Use `poetry run pytest` to run tests.
-- The pre-commit hooks will run automatically on commit, or you can run them manually with `poetry run pre-commit run --all-files`.
+- Use `python -m pytest` to run tests.
+- The pre-commit hooks will run automatically on commit, or you can run them manually with `pre-commit run --all-files`.
 
 ## GitHub Actions
 
